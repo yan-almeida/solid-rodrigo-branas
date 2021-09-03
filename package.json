@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "test": "tsc && jest .dist"
+  },
+  "dependencies": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "jest": "^27.1.0",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "typescript": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "organize-imports-cli",
+      "yarn lint",
+      "yarn format"
+    ]
+  }
+}
