@@ -1,0 +1,1 @@
+Total: R$ {total} (Imposto adicionados: R$ {impostos}). Obrigado por comprar em nosso estabelecimento!
