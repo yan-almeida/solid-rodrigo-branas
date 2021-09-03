@@ -1,6 +1,4 @@
-SOLID
-
-5 princípios
+# SOLID - 5 princípios
 
 
 1 - SRP
